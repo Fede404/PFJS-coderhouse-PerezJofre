@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.25em;
+  color: #70798c;
+}
+nav .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #0d1821;
+}
+nav .container-fluid .cart-anchor {
+  text-decoration: none;
+  font-size: 1.25em;
+  color: #70798c;
+}
+nav .container-fluid .cart-anchor:hover {
+  color: #0d1821;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,33 @@
+@use "_vars";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    .container-fluid {
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.25em;
+                        color: vars.$color3;
+                        &:hover {
+                            color: vars.$color4;
+                        }
+                    }
+                }
+            }
+        }
+        .cart-anchor {
+            text-decoration: none;
+            font-size: 1.25em;
+            color: vars.$color3;
+            &:hover {
+                color: vars.$color4;
+            }
+        }
+    }
+}   
