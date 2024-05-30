@@ -23,12 +23,26 @@ nav {
                 }
             }
         }
-        .cart-anchor {
-            text-decoration: none;
-            font-size: 1.25em;
-            color: vars.$color4;
-            &:hover {
-                color: vars.$color2;
+        .cartNSearch-container {
+            .search-container {
+                input {
+                    outline: none;
+                    border-radius: 5px;
+                    border: 1px solid vars.$color3;
+                    background-color: #ffffff;
+                    padding: 0.5em 1em;
+                    text-align: start;
+                }
+            }
+            .cart-container {
+                .cart-anchor {
+                    text-decoration: none;
+                    font-size: 1.25em;
+                    color: vars.$color4;
+                    &:hover {
+                        color: vars.$color2;
+                    }
+                }
             }
         }
     }
@@ -63,6 +77,7 @@ nav {
     flex-direction: column;
     align-items: center;
     h1 {
+        margin-top: 1em;
         color: vars.$color4;
         text-align: center;
         font-size: 3em;
