@@ -51,6 +51,7 @@ nav .container-fluid .cartNSearch-container .cart-container .cart-anchor:hover {
 }
 .home-section .wallpaper .bg-img {
   width: 100%;
+  height: 100vh;
 }
 .home-section .wallpaper .attribution-desc {
   font-size: 0.75em;
@@ -78,7 +79,7 @@ nav .container-fluid .cartNSearch-container .cart-container .cart-anchor:hover {
   text-align: center;
   font-size: 1.5em;
 }
-.us-section .order-btn {
+.us-section .contact-btn {
   outline: none;
   padding: 0.5em 5em;
   border-radius: 5px;
@@ -88,10 +89,10 @@ nav .container-fluid .cartNSearch-container .cart-container .cart-anchor:hover {
   font-size: 1.25em;
   transition: all 0.2s;
 }
-.us-section .order-btn:hover {
+.us-section .contact-btn:hover {
   background-color: #6a0000;
 }
-.us-section .order-btn:active {
+.us-section .contact-btn:active {
   transform: scale(98%);
 }
 
@@ -172,6 +173,21 @@ nav .container-fluid .cartNSearch-container .cart-container .cart-anchor:hover {
 }
 .purchase-section .product-container .row .col .card .card-body .card-product-options .card-options-container .add-btn:active {
   transform: scale(98%);
+}
+
+.footer {
+  height: 7.5vh;
+  background-color: #6a0000;
+  padding: 0 2em;
+}
+.footer .page-info {
+  color: #fffaf4;
+  font-size: 1.25em;
+  margin: 0;
+}
+.footer .socials-container .anchor {
+  margin: 0 0.5em 0 0;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
