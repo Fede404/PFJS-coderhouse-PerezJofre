@@ -16,13 +16,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link" href="#home">Inicio</a>
+                    <a class="nav-link" href="#home-section">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#us">Sobre Nosotros</a>
+                    <a class="nav-link" href="#us-section">Sobre Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Realizar Pedido</a>
+                        <a class="nav-link" href="#purchase-section">Productos</a>
                     </li>
                 </ul>
             </div>
@@ -45,17 +45,17 @@
             </div>
         </div>
     </nav>
-    <section class="home-section" id="home">
-        <div class="wallpaper">
+    <section class="home-section" id="home-section">
+        <div class="wallpaper d-flex flex-column align-items-center">
             <img class="logo" src="resources/images/logo2.webp" alt="">
             <img class="bg-img" src="resources/images/wallpaper.webp" alt="Copa de vino">
-            <p>Foto de <a href="https://unsplash.com/es/@kymellis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kym Ellis</a> en <a href="https://unsplash.com/es/fotos/copa-de-vino-transparente-con-vistas-al-huerto-durante-el-dia-aF1NPSnDQLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            <p class="attribution-desc">Foto de <a href="https://unsplash.com/es/@kymellis?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Kym Ellis</a> en <a href="https://unsplash.com/es/fotos/copa-de-vino-transparente-con-vistas-al-huerto-durante-el-dia-aF1NPSnDQLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
             </p>
         </div>
     </section>
-    <section class="us-section" id="us">
-        <h1>Conoce más sobre nosotros</h1>
-        <p>En West, nos apasiona el vino y nos encanta compartir esa pasión con nuestros clientes.Ya sea que seas un conocedor experimentado o simplemente estés empezando a explorar el maravilloso mundo del vino, estamos aquí para ayudarte a encontrar la opción perfecta para cada ocasión.<br><br>
+    <section class="us-section d-flex flex-column align-items-center" id="us-section">
+        <h1 class="us-section-title">Conoce más sobre nosotros</h1>
+        <p class="us-section-desc">En West, nos apasiona el vino y nos encanta compartir esa pasión con nuestros clientes.Ya sea que seas un conocedor experimentado o simplemente estés empezando a explorar el maravilloso mundo del vino, estamos aquí para ayudarte a encontrar la opción perfecta para cada ocasión.<br><br>
             
             Nuestra selección de vinos ha sido cuidadosamente curada para ofrecerte una amplia variedad de opciones, desde los clásicos de renombre mundial hasta descubrimientos de pequeños viñedos familiares. Creemos en la calidad sobre la cantidad, por lo que cada botella que ofrecemos ha sido seleccionada por su excelencia y carácter único.<br><br>
             
@@ -69,6 +69,375 @@
             
             El equipo de West</p>
         <button class="order-btn">Realizar Pedido</button>
+    </section>
+    <section class="purchase-section d-flex flex-column align-items-center" id="purchase-section">
+        <h2 class="purchase-section-title">Productos Disponibles</h2>
+        <div class="product-container container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/1.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Trivento Reserve</h5>
+                                <p class="card-text">Profundo color rojo con matices violáceos.<br><br>
+                                    En nariz intensidad de frutos rojos frescos, fresas, frambuesas y cerezas. La madera entregó notas de vainilla, pan tostado, clavo de olor y humo. El conjunto aromático es complejo y potente.<br><br>
+                                    En boca impacta en boca con presencia, medio amplio donde se sienten sus taninos suaves y exquisitos y final jugoso y enérgico.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$5714.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/2.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Casillero del Diablo</h5>
+                                <p class="card-text">Perfecto para acompañar picada con jamón serrano ahumado, queso azul con aceitunas negras y empanadas de carne magra picada.<br><br>
+
+                                    Aroma: Notas de cassis, guindas rojas y ciruela negra complementada con toques de vainilla, moca, café tostada y chocolate. Boca: Suave pero a la vez concentrado, es un vino elegante de larga y agradable persistencia. Color: Rojo intenso.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$6094.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/3.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Altos las Hormigas</h5>
+                                <p class="card-text">Posee un color rojo rubí brillante, con vivaces reflejos violáceos. La nariz es intensa, con notas a frutos rojos, frutilla y ciruela fresca. <br><br> A medida que el vino se va abriendo empieza a mostrar notas de grafito, que recalcan su mineralidad. Es un vino fresco, muy bebible, con una acidez equilibrada en boca y taninos amables. Su sabor permanece en el paladar con un final frutado y vertical. Ideal para acompañar las clásicas carnes rojas, pastas o verduras grilladas.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$6460.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/4.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Tinto Negro Uco Valley</h5>
+                                <p class="card-text">"Un malbec especiado con muchas bayas y cerezas que se extiende a un paladar jugoso, de cuerpo medio con taninos elegantes y calcáreos. Final sabroso y afrutado. Vegano. Bebe ahora." James Suckling <br><br>
+
+                                    TintoNegro, está destinada a celebrar la esencia del Malbec, conocido por su color oscuro y negruzco, el Malbec es definitivamente un TintoNegro. La bodega nació de la amistad y la colaboración profesional de Alejandro Sejanovich y Jeff Mausbach, colegas en Bodega Catena Zapata durante casi 15 años.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$8245.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/5.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Lo Red Reserve</h5>
+                                <p class="card-text">El cabernet franc (50% del blend) aporta leves toques herbales y muchas frutas rojas, pero parece ser que el malbec pone todos los sabores y ese dulzor encantador de la cepa en Mendoza, las flores y las frutas negras con una proporción similar de sensación de dulzor y acidez. Se siente inusualmente fresco para venir de Agrelo, un lugar en donde los tintos tienden a ser mucho más cremosos. Aquí hay taninos, hay tensión y frescor en una cara nueva de Agrelo.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$15300.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/6.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Bira Rosso D'Uco</h5>
+                                <p class="card-text">Profundo color rojo con matices violáceos.<br><br>
+                                    En nariz intensidad de frutos rojos frescos, fresas, frambuesas y cerezas. La madera entregó notas de vainilla, pan tostado, clavo de olor y humo. El conjunto aromático es complejo y potente.<br><br>
+                                    En boca impacta en boca con presencia, medio amplio donde se sienten sus taninos suaves y exquisitos y final jugoso y enérgico.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$13600.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/7.webp"alt="Vino Blanco">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Trivento Golden Reserve</h5>
+                                <p class="card-text">Este chardonnay es una mezcla de viñedos en Tupungato y Los Sauces, ambas en el Valle de Uco, al sur de Mendoza y a los pies de la cordillera de los Andes. <br><br> La crianza se prolonga por 14 meses en fudres de madera ya usada. Y el resultado es un chardonnay que, por un lado, tiene aromas cremosos y maduros y, por el otro, tiene un paladar firme, tenso, de mucho agarre y crocante acidez. En resumen, un blanco perfecto para trucha a la parrilla.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$12618.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/8.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Zuccardi Q</h5>
+                                <p class="card-text">La línea Zuccardi Q, su nombre viene de Quality, se elabora con uvas provenientes de zonas y viñedos seleccionados para cada variedad. <br><br>Corte de viñedos seleccionados, provenientes de las mejores zonas de Mendoza. Cada lote se cosecha por separado y en distintos momentos, a fin de logar elegancia y equilibrio en el vino final.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$17422.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/9.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Cono Sur Reserva Especial</h5>
+                                <p class="card-text">La influencia del Océano Pacífico, y el intenso color rojo de sus suelos se unieron para crear este refrescante y crujiente blanco. <br><br> Un Sauvignon Blanc amarillo con toques verdes. En nariz es un vino cuyas finas notas a pomelo se combinan con aromas a manzanas verdes y duraznos blancos. Es fresco y delicado, con una boca crujiente y equilibrada, además de agradable mineralidad.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$15565.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/10.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Zuccardi Polígonos Tupungato</h5>
+                                <p class="card-text">La Carrera se encuentra en el extremo occidental de Tupungato, en uno de los lugares de mayor altura del Valle de Uco, justo al norte de El Peral. Esa zona fría parece ideal para el sauvignon blanc y aquí se siente ese frío en las notas herbales, en una acidez intensa y firme, casi filosa. <br><br> Esta es la primera vez que se incluye un sauvignon blanc en esta línea, un experimento para ver el potencial de La Carrera con esta cepa en particular y con los blancos en general. Patricio Tapia, Guia Descorchados
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$22182.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/11.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Trivento White</h5>
+                                <p class="card-text">El Trivento Reserve White Malbec es un vino con impacto social, cuyos fondos se utilizan para Becas Estudiantiles. Incursionaron en la elaboración de un blanco a partir de uvas tintas y así nació el White Malbec. <br><br> Una agradable y simple aventura es este malbec, hecho como blanco, es decir, sin que el jugo tenga un contacto prolongado con las pieles de las uvas, que es donde yace el color. El cuerpo es ligero, los sabores a frutas rojas y blancas. Ideal para el aperitivo en vacaciones.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$5714.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/12.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Angelica Zapata</h5>
+                                <p class="card-text">Angélica Chardonnay es un “single vineyard” que refleja características propias de la zona de gran altitud en donde se origina.    <br><br> En nariz se presenta concentrado e intenso, con aromas de frutas cítricas y un toque mineral. En boca, de impacto dulce, untuoso, es brillante y fresco con sabores a frutas maduras, notas de vainilla y una excelente acidez natural que le otorga un final largo y persistente.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$25257.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/13.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Flora by Zaha</h5>
+                                <p class="card-text">Un rosado de pinot que transita por el camino de las frutas amables y jugosas, con un cierto dulzor que le da un carácter más amable y fácil de entender. Los sabores son afrutados en un rosé que sería un muy buen compañero de camarones en salsa agridulce. <br><br>En copa se aprecia un color rosa pálido, en nariz el vino se expresa con delicadas notas de fruta roja muy fresca y flores. En boca se expresa con una acidez fresca que sostiene recuerdos de hierbas y frutos de bosque recién cosechados.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$15130.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/14.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Mártir</h5>
+                                <p class="card-text">Mártir refleja el sacrificio. Desde sus orígenes, rinde homenaje a San Lorenzo, santo de quien nuestro proyecto toma su nombre, símbolo de una vida consagrada a la entrega y ferviente defensor de sus nobles principios e ideales. Esta línea incluye sus grandes exponentes de Malbec y Cabernet Franc y el Chardonnay. <br><br> Mártir es también generosidad en su máxima expresión, ya que invita a la degustación del resto de nuestros vinos. Es por eso que lo consideramos el fiel representante de Alto Agrelo.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$22525.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/13.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Saint Felicien</h5>
+                                <p class="card-text">Saint Felicien Rosé es un vino fresco, color rosa pálido con reflejos cobrizos. <br><br> En nariz presenta dejos a hierbas mediterráneas, con notas de tomillo, azahar y pimienta rosa junto a frutilla y pomelo rosado. En boca es fresco, elegante y ligero. Las notas florales y frutales dejan un largo y grato recuerdo.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$26507.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/16.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Nacha</h5>
+                                <p class="card-text">Nacha, de Bodega Chacra, es un rosado de Pinot Noir hecho con uvas del viñedo de Barda, de 25 años de edad, es un vino fresco y bebible, con la finura y sutileza características de Chacra, para tomar bien frío. <br><br> Es un vino orgánico y biodinámico, hecho a la manera del rosé, con poco contacto con pieles, fácil de beber, con poco alcohol, con buena acidez natural, simple, un vino que se da fácilmente.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$32725.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/17.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Bira Rosa di Rosso</h5>
+                                <p class="card-text">Sutil, complejo, pero a la vez elegantemente aromático, fresco y persistente. De viñas antiguas en el Valle de Uco. <br><br>BIRA nace en 2017 de la búsqueda de las raíces familiares de sus dos socios y amigos, ambos ligados a Italia. Con preferencia por los vinos de la península, deciden buscar viñedos antiguos en el Valle de Uco y elaborar vinos tintos de cortes inusuales para Argentina, así como blancos con esa influencia. Producción muy limitada y foco en la calidad y consistencia.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$13600.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col">
+                    <div class="card d-flex flex-column align-items-center">
+                        <img src="resources/images/products/18.webp"alt="Vino Tinto">
+                        <div class="card-body d-flex flex-column align-items-center">
+                            <div class="card-product-desc d-flex flex-column align-items-center">
+                                <h5 class="card-title">Trivento Reserve</h5>
+                                <p class="card-text">Procedente de viñedos de altura, este blend color rosa pálido expresa
+                                    profundos aromas a rosas, frutas rojas ácidas y granadina. De entrada dulce y
+                                    persistencia marcada, con acidez envolvente, fresco y limpio. <br><br> Ideal para acompañar con ensaladas, pescados, mariscos y quesos con buena acidez como el Mozzarella.
+                                </p>
+                            </div>
+                        <div class="card-product-options d-flex flex-column align-items-center">
+                            <p class="card-price">$5714.00</p>
+                            <div class="card-options-container d-flex">
+                                <input type="number" placeholder="Cant." id="quant-imput">
+                                <button class="add-btn">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

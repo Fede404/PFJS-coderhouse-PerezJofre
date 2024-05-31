@@ -1,13 +1,7 @@
-@use "_vars";
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@use "_utils";
 
 nav {
-    background-color: vars.$color1;
+    background-color: utils.$color1;
     .container-fluid {
         .navbar-collapse {
             .navbar-nav {
@@ -15,9 +9,9 @@ nav {
                     .nav-link {
                         transition: all 0.2s;
                         font-size: 1.25em;
-                        color: vars.$color4;
+                        color: utils.$color4;
                         &:hover {
-                            color: vars.$color2;
+                            color: utils.$color2;
                         }
                     }
                 }
@@ -25,10 +19,10 @@ nav {
         }
         .cartNSearch-container {
             .search-container {
-                input {
+                #search-input {
                     outline: none;
                     border-radius: 5px;
-                    border: 1px solid vars.$color3;
+                    border: 1px solid utils.$color3;
                     background-color: #ffffff;
                     padding: 0.5em 1em;
                     text-align: start;
@@ -38,9 +32,9 @@ nav {
                 .cart-anchor {
                     text-decoration: none;
                     font-size: 1.25em;
-                    color: vars.$color4;
+                    color: utils.$color4;
                     &:hover {
-                        color: vars.$color2;
+                        color: utils.$color2;
                     }
                 }
             }
@@ -48,11 +42,8 @@ nav {
     }
 }
 .home-section {
-    background-color: vars.$color1;
+    background-color: utils.$color1;
     .wallpaper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         .logo {
             position: absolute;
             top: 15%;
@@ -60,49 +51,124 @@ nav {
         .bg-img {
             width: 100%;
         }
-        p {
+        .attribution-desc {
             font-size: 0.75em;
-            color: vars.$color4;
+            color: utils.$color4;
             a {
-                color: vars.$color4;
+                color: utils.$color4;
             }
         }
     }
 }
 .us-section {
     height: 100vh;
-    background-color: vars.$color1;
+    background-color: utils.$color1;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
+    .us-section-title {
         margin-top: 1em;
-        color: vars.$color4;
+        color: utils.$color4;
         text-align: center;
         font-size: 3em;
     }
-    p {
+    .us-section-desc {
         margin-top: 1em;
         padding: 0 10%;
-        color: vars.$color4;
+        color: utils.$color4;
         text-align: center;
         font-size: 1.5em;
     }
     .order-btn {
         outline: none;
         padding: 0.5em 5em;
-        border-radius: 10px;
-        color: vars.$color1;
-        border: 1px solid vars.$color3;
-        background-color: vars.$color4;
+        border-radius: 5px;
+        color: #ffffff;
+        border: 1px solid utils.$color3;
+        background-color: utils.$color4;
         font-size: 1.25em;
         transition: all 0.2s;
         &:hover {
-            background-color: vars.$color2;
+            background-color: utils.$color2;
         }
         &:active {
             transform: scale(98%);
+        }
+    }
+}
+.purchase-section {
+    padding-bottom: 2em;
+    height: auto;
+    background-color: utils.$color1;
+    padding-top: 4em;
+    .purchase-section-title {
+        font-size: 3em;
+        color: utils.$color4;
+    }
+    .product-container {
+        width: 75%;
+        .row {
+            width: 100%;
+            .col {
+                padding: 1em;
+                width: 33%;
+                .card {
+                    height: 100%;
+                    width: 100%;
+                    border: 2px solid utils.$color2;
+                    img {
+                        width: 60%;
+                    }
+                    .card-body {
+                        height: 50%;
+                        .card-product-desc {
+                            height: 75%;
+                            .card-title {
+                                font-size: 1.5em;
+                                color: utils.$color4;
+                            }
+                            .card-text {
+                                color: utils.$color4;
+                                font-size: 0.95em;
+                            }
+                        }
+                        .card-product-options {
+                            height: 25%;
+                            .card-price {
+                                font-size: 1.25em;
+                                color: utils.$color2;
+                            }
+                            .card-options-container {
+                                gap: 1em;
+                                #quant-imput {
+                                width: 25%;
+                                    outline: none;
+                                    border-radius: 5px;
+                                    border: 1px solid utils.$color2;
+                                    background-color: #ffffff;
+                                    padding: 0.5em 0;
+                                    text-align: center;
+                                }
+                                .add-btn {
+                                    width: 75%;
+                                    outline: none;
+                                    padding: 0.25em 1em;
+                                    border-radius: 5px;
+                                    color: #ffffff;
+                                    border: 1px solid utils.$color2;
+                                    background-color: utils.$color4;
+                                    font-size: 1.25em;
+                                    transition: all 0.2s;
+                                    &:hover {
+                                        background-color: utils.$color2;
+                                    }
+                                    &:active {
+                                        transform: scale(98%);
+                                    }
+                                }        
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
