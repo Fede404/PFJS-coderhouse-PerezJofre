@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Fede404/PreentregaJS3-coderhouse-PerezJofre#readme",
   "dependencies": {
-    "sass": "^1.77.2"
+    "sass": "^1.77.2",
+    "sweetalert2": "^11.11.0"
   }
 }

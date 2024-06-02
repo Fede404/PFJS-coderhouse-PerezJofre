@@ -2,6 +2,7 @@
 
 nav {
     background-color: utils.$color1;
+    border-bottom: 1px solid utils.$color3;
     .container-fluid {
         .navbar-collapse {
             .navbar-nav {
@@ -18,7 +19,7 @@ nav {
             }
         }
         .cartNSearch-container {
-            .search-container {
+            .cartNSearch {
                 #search-input {
                     outline: none;
                     border-radius: 5px;
@@ -27,16 +28,42 @@ nav {
                     padding: 0.5em 1em;
                     text-align: start;
                 }
+                #search-btn {
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                }
+                #cart-btn {
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+            .search-container {
+                text-align: center;
+                color: utils.$color4;
+                display: none;
+                background-color: utils.$color1;
+                width: 25%;
+                height: auto;
+                position: absolute;
+                top: 100%;
+                right: 0%;
+                border: 1px solid utils.$color3;
+                padding: 1em 0;
             }
             .cart-container {
-                .cart-anchor {
-                    text-decoration: none;
-                    font-size: 1.25em;
-                    color: utils.$color4;
-                    &:hover {
-                        color: utils.$color2;
-                    }
-                }
+                text-align: center;
+                color: utils.$color4;
+                display: none;
+                background-color: utils.$color1;
+                width: 25%;
+                height: auto;
+                position: absolute;
+                top: 100%;
+                right: 0%;
+                border: 1px solid utils.$color3;
+                padding: 1em 0;
             }
         }
     }
@@ -62,9 +89,10 @@ nav {
     }
 }
 .us-section {
-    height: 100vh;
+    height: auto;
     background-color: utils.$color1;
     margin: auto;
+    padding-top: 1em;
     .us-section-title {
         margin-top: 1em;
         color: utils.$color4;
@@ -105,41 +133,43 @@ nav {
         color: utils.$color4;
     }
     .product-container {
-        width: 75%;
+        width: 90%;
         .row {
             width: 100%;
             .col {
                 padding: 1em;
                 width: 33%;
                 .card {
+                    padding: 0.5em;
                     height: 100%;
                     width: 100%;
                     border: 2px solid utils.$color2;
                     img {
-                        width: 60%;
+                        width: 50%;
                     }
                     .card-body {
                         height: 50%;
                         .card-product-desc {
                             height: 75%;
                             .card-title {
-                                font-size: 1.5em;
+                                font-size: 1.25em;
                                 color: utils.$color4;
                             }
                             .card-text {
                                 color: utils.$color4;
-                                font-size: 0.95em;
+                                font-size: 0.9em;
                             }
                         }
                         .card-product-options {
+                            padding-top: 1em;
                             height: 25%;
                             .card-price {
-                                font-size: 1.25em;
+                                font-size: 1.2em;
                                 color: utils.$color2;
                             }
                             .card-options-container {
                                 gap: 1em;
-                                #quant-imput {
+                                .quant-imput {
                                 width: 25%;
                                     outline: none;
                                     border-radius: 5px;
