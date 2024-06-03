@@ -14,5 +14,46 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none; 
     margin: 0; 
 }
+.found-prod-container {
+    padding: 0 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.no-style-anchor {
+    text-decoration: none;
+}
+.redirect-btn {
+    outline: none;
+    padding: 0.25em 1em;
+    border-radius: 5px;
+    color: #ffffff;
+    border: 1px solid $color3;
+    background-color: $color4;
+    font-size: 1em;
+    transition: all 0.2s;
+    &:hover {
+        background-color: $color2;
+    }
+    &:active {
+        transform: scale(98%);
+    }
+}
 
-input[type=number] { -moz-appearance:textfield; }
+.close-btn {
+    outline: none;
+    padding: 0.25em 0.75em;
+    margin-top: 1em;
+    border-radius: 50px;
+    color: #ffffff;
+    border: 1px solid $color3;
+    background-color: $color4;
+    font-size: 1em;
+    transition: all 0.2s;
+    &:hover {
+        background-color: $color2;
+    }
+    &:active {
+        transform: scale(98%);
+    }
+}
