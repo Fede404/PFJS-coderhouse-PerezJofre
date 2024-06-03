@@ -1,3 +1,4 @@
+// PRODUCT OBJECTS
 class producto {
 	constructor(id, nombre, tipo, variedad, precio, anio, stock) {
 		this.id = id;
@@ -124,7 +125,7 @@ const prod15 = new producto(
 	15,
 	"saint felicien",
 	"rose",
-	"malbec",
+	"blend",
 	266507,
 	2023,
 	15
@@ -211,21 +212,29 @@ const listaDeProductos = cargarProductos(
 	prod18
 );
 
-class productoAlCarrito {
-	constructor(nombre, precio, unidades) {
-		this.nombre = nombre;
-		this.precio = precio;
-		this.unidades = unidades;
-	}
-}
-
-//NAV INPUTS & MODALS
+//NAV
 const searchModal = document.getElementById("search-container");
 const cartModal = document.getElementById("cart-container");
 const searchBtn = document.getElementById("search-btn");
 const cartBtn = document.getElementById("cart-btn");
 const searchInput = document.getElementById("search-input");
-// TRIGGER INFO MODAL//SWAP MODALS
+
+searchInput.addEventListener("click", () => {
+	Toastify({
+		text: "Puedes buscar o filtrar por nombres, tipos(tinto, blanco o rose) y uvas",
+		duration: 3000,
+		offset: {
+			x: 0,
+			y: 45,
+		},
+		style: {
+			color: "#fffaf4",
+			background: "#6a0000",
+		},
+		close: true,
+	}).showToast();
+});
+
 const searchModalSwap = function () {
 	searchModal.style.display = "block";
 	cartModal.style.display = "none";
@@ -235,16 +244,7 @@ const cartModalSwap = function () {
 	searchModal.style.display = "none";
 };
 
-//CART
-
-cartBtn.addEventListener("click", () => {
-	cartModal.style.display === "none"
-		? cartModalSwap()
-		: (cartModal.style.display = "none");
-});
-
 //SEARCH
-
 searchBtn.addEventListener("click", () => {
 	divBusqueda.innerHTML = "";
 	buscarProducto();
@@ -271,33 +271,58 @@ function crearYAnadir() {
 		parrafo.textContent = e.nombre.toUpperCase();
 		foundProdDiv.appendChild(parrafo);
 		const anchor = document.createElement("a");
-        anchor.href = "#card" + e.id
-        anchor.classList.add("no-style-anchor")
-        const redirectBtn = document.createElement("button");
-        redirectBtn.innerText = "Ver"
-        redirectBtn.classList.add("redirect-btn")
-        anchor.appendChild(redirectBtn)
-        foundProdDiv.appendChild(anchor)
-        divBusqueda.appendChild(foundProdDiv)
+		anchor.href = "#card" + e.id;
+		anchor.classList.add("no-style-anchor");
+		const redirectBtn = document.createElement("button");
+		redirectBtn.innerText = "Ver";
+		redirectBtn.classList.add("redirect-btn");
+		anchor.appendChild(redirectBtn);
+		foundProdDiv.appendChild(anchor);
+		divBusqueda.appendChild(foundProdDiv);
 	});
-    const closeBtn = document.createElement("button")
-    closeBtn.innerText = "X"
-    closeBtn.classList.add("close-btn")
-    divBusqueda.appendChild(closeBtn)
-    closeBtn.addEventListener ("click", () => {
-        divBusqueda.style.display = "none"
-    })
-    searchModalSwap();
+	const closeBtn = document.createElement("button");
+	closeBtn.innerText = "X";
+	closeBtn.classList.add("close-btn");
+	divBusqueda.appendChild(closeBtn);
+	closeBtn.addEventListener("click", () => {
+		divBusqueda.style.display = "none";
+	});
+	searchModalSwap();
 }
 
 function sinResultados() {
-    divBusqueda.style.display = "none"
+	divBusqueda.style.display = "none";
 	Swal.fire({
 		title: "Producto no encontrado",
-		text: "Evite dejar el campo vacío. Puedes buscar por nombre, tipo o variedad.",
+		text: "Evite dejar el campo vacío.",
 		icon: "error",
 		confirmButtonText: "Aceptar",
 		confirmButtonColor: "#6a0000",
 		iconColor: "#6a0000",
 	});
 }
+
+//CART
+class productoAlCarrito {
+	constructor(nombre, precio, unidades) {
+		this.nombre = nombre;
+		this.precio = precio;
+		this.unidades = unidades;
+	}
+}
+
+cartBtn.addEventListener("click", () => {
+	cartModal.style.display === "none"
+		? cartModalSwap()
+		: (cartModal.style.display = "none");
+});
+
+// const addBtns = document.querySelectorAll(".add-btn");
+// const quantImputs = document.querySelectorAll(".quant-imput")
+// addBtns.forEach((button) => {
+// 	button.addEventListener("click", pushToCart())
+// })
+// function pushToCart(event) {
+// 	const boton = event.target
+// 	const info = 
+// }
