@@ -47,10 +47,11 @@
                 <div class="search-container" id="search-container">
                 </div>
                 <div class="cart-container" id="cart-container">
-                    <p> Carrito de compras</p>
                     <ul id="lista-carrito">
                         
                     </ul>
+                    <p>Total: $<span id="total">0</span></p>
+                    <button class="close-btn" id="clearCartBtn">Limpiar Carrito</button>
                 </div>
             </div>
         </div>
@@ -87,7 +88,7 @@
         <div class="product-container container-fluid">
             <div class="row">
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card1">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/1.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -100,7 +101,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Cabernet Sauvignon | $5714.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -108,7 +109,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card2">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/2.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -121,7 +122,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Cabernet Sauvignon | $6094.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -129,7 +130,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card3">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/3.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -140,7 +141,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Malbec | $6460.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -150,7 +151,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card4">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/4.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -163,7 +164,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Malbec | $8245.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -171,7 +172,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card5">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/5.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -182,7 +183,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Blend | $15300.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -190,7 +191,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card6">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/6.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -203,7 +204,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Blend | $13600.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -213,7 +214,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card7">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/7.webp"alt="Vino Blanco">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -224,7 +225,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Chardonnay | $12618.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -232,7 +233,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card8">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/8.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -243,7 +244,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Chardonnay | $17422.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -251,7 +252,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card9">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/9.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -262,7 +263,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Sauvignon Blanc | $15565.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -272,7 +273,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card10">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/10.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -283,7 +284,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Sauvignon Blanc | $22182.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -291,7 +292,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card11">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/11.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -302,7 +303,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Malbec | $5714.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -310,7 +311,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card12">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/12.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -321,7 +322,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Chardonnay | $25257.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -331,7 +332,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card13">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/13.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -342,7 +343,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Pinot Noir | $15130.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -350,7 +351,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card14">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/14.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -361,7 +362,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Malbec |$22525.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -369,8 +370,8 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card15">
-                        <img src="resources/images/products/13.webp"alt="Vino Tinto">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
+                        <img src="resources/images/products/15.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
                                 <h5 class="card-title">Saint Felicien 2023</h5>
@@ -380,7 +381,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Blend | $26507.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -390,7 +391,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card16">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/16.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -401,7 +402,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Pinot Noir | $32725.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -409,7 +410,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card17">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/17.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -420,7 +421,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Blend | $13600.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>
@@ -428,7 +429,7 @@
                 </div>
                 </div>
                 <div class="col">
-                    <div class="card d-flex flex-column align-items-center" id="card18">
+                    <div class="card d-flex flex-column align-items-center" data-stock="20">
                         <img src="resources/images/products/18.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
@@ -441,7 +442,7 @@
                         <div class="card-product-options d-flex flex-column align-items-center">
                             <p class="card-price">Blend | $5714.00</p>
                             <div class="card-options-container d-flex">
-                                <input type="number" placeholder="Cant." name="quant-imput" class="quant-imput">
+                                <input type="number" placeholder="Cant." class="quant-imput">
                                 <button class="add-btn">Añadir al carrito</button>
                             </div>
                         </div>

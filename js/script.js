@@ -1,13 +1,12 @@
 // PRODUCT OBJECTS
 class producto {
-	constructor(id, nombre, tipo, variedad, precio, anio, stock) {
+	constructor(id, nombre, tipo, variedad, precio, anio) {
 		this.id = id;
 		this.nombre = nombre;
 		this.tipo = tipo;
 		this.variedad = variedad;
 		this.precio = precio;
 		this.anio = anio;
-		this.stock = stock;
 	}
 }
 
@@ -17,8 +16,7 @@ const prod1 = new producto(
 	"tinto",
 	"cabernet sauvignon",
 	5714,
-	2021,
-	20
+	2021
 );
 const prod2 = new producto(
 	2,
@@ -26,8 +24,7 @@ const prod2 = new producto(
 	"tinto",
 	"cabernet sauvignon",
 	6094,
-	2021,
-	30
+	2021
 );
 const prod3 = new producto(
 	3,
@@ -35,8 +32,7 @@ const prod3 = new producto(
 	"tinto",
 	"malbec",
 	6460,
-	2021,
-	15
+	2021
 );
 const prod4 = new producto(
 	4,
@@ -44,8 +40,7 @@ const prod4 = new producto(
 	"tinto",
 	"malbec",
 	8245,
-	2022,
-	25
+	2022
 );
 const prod5 = new producto(5, "lo red", "tinto", "blend", 8515, 2016, 30);
 const prod6 = new producto(
@@ -54,8 +49,7 @@ const prod6 = new producto(
 	"tinto",
 	"blend",
 	13600,
-	2022,
-	25
+	2022
 );
 const prod7 = new producto(
 	7,
@@ -63,8 +57,7 @@ const prod7 = new producto(
 	"blanco",
 	"chardonnay",
 	12618,
-	2019,
-	10
+	2019
 );
 const prod8 = new producto(
 	8,
@@ -72,8 +65,7 @@ const prod8 = new producto(
 	"blanco",
 	"chardonnay",
 	17422,
-	2021,
-	30
+	2021
 );
 const prod9 = new producto(
 	9,
@@ -81,8 +73,7 @@ const prod9 = new producto(
 	"blanco",
 	"sauvignon blanc",
 	15565,
-	2021,
-	15
+	2021
 );
 const prod10 = new producto(
 	10,
@@ -90,8 +81,7 @@ const prod10 = new producto(
 	"blanco",
 	"sauvignon blanc",
 	22182,
-	2023,
-	30
+	2023
 );
 const prod11 = new producto(
 	11,
@@ -99,8 +89,7 @@ const prod11 = new producto(
 	"blanco",
 	"malbec",
 	5714,
-	2022,
-	25
+	2022
 );
 const prod12 = new producto(
 	12,
@@ -108,8 +97,7 @@ const prod12 = new producto(
 	"blanco",
 	"chardonnay",
 	25257,
-	2020,
-	10
+	2020
 );
 const prod13 = new producto(
 	13,
@@ -117,8 +105,7 @@ const prod13 = new producto(
 	"rose",
 	"pinot noir",
 	15130,
-	2022,
-	30
+	2022
 );
 const prod14 = new producto(14, "martir", "rose", "malbec", 22525, 2012, 20);
 const prod15 = new producto(
@@ -127,8 +114,7 @@ const prod15 = new producto(
 	"rose",
 	"blend",
 	266507,
-	2023,
-	15
+	2023
 );
 const prod16 = new producto(16, "nacha", "rose", "pinot noir", 32725, 2022, 25);
 const prod17 = new producto(
@@ -137,8 +123,7 @@ const prod17 = new producto(
 	"rose",
 	"blend",
 	13600,
-	2023,
-	20
+	2023
 );
 const prod18 = new producto(
 	18,
@@ -146,8 +131,7 @@ const prod18 = new producto(
 	"rose",
 	"blend",
 	5714,
-	2019,
-	30
+	2019
 );
 
 function cargarProductos(
@@ -235,11 +219,11 @@ searchInput.addEventListener("click", () => {
 	}).showToast();
 });
 
-const searchModalSwap = function () {
+const swapModalS = function () {
 	searchModal.style.display = "block";
 	cartModal.style.display = "none";
 };
-const cartModalSwap = function () {
+const swapModalC = function () {
 	cartModal.style.display = "block";
 	searchModal.style.display = "none";
 };
@@ -265,29 +249,29 @@ function buscarProducto() {
 const divBusqueda = document.getElementById("search-container");
 function crearYAnadir() {
 	arrayFiltrado.forEach((e) => {
-		const foundProdDiv = document.createElement("div");
-		foundProdDiv.classList.add("found-prod-container");
+		const productoEncontrado = document.createElement("div");
+		productoEncontrado.classList.add("found-prod-container");
 		const parrafo = document.createElement("p");
 		parrafo.textContent = e.nombre.toUpperCase();
-		foundProdDiv.appendChild(parrafo);
+		productoEncontrado.appendChild(parrafo);
 		const anchor = document.createElement("a");
 		anchor.href = "#card" + e.id;
 		anchor.classList.add("no-style-anchor");
-		const redirectBtn = document.createElement("button");
-		redirectBtn.innerText = "Ver";
-		redirectBtn.classList.add("redirect-btn");
-		anchor.appendChild(redirectBtn);
-		foundProdDiv.appendChild(anchor);
-		divBusqueda.appendChild(foundProdDiv);
+		const btnRedirigir = document.createElement("button");
+		btnRedirigir.innerText = "Ver";
+		btnRedirigir.classList.add("redirect-btn");
+		anchor.appendChild(btnRedirigir);
+		productoEncontrado.appendChild(anchor);
+		divBusqueda.appendChild(productoEncontrado);
 	});
-	const closeBtn = document.createElement("button");
-	closeBtn.innerText = "X";
-	closeBtn.classList.add("close-btn");
-	divBusqueda.appendChild(closeBtn);
-	closeBtn.addEventListener("click", () => {
+	const btnCerrar = document.createElement("button");
+	btnCerrar.innerText = "X";
+	btnCerrar.classList.add("close-btn");
+	divBusqueda.appendChild(btnCerrar);
+	btnCerrar.addEventListener("click", () => {
 		divBusqueda.style.display = "none";
 	});
-	searchModalSwap();
+	swapModalS();
 }
 
 function sinResultados() {
@@ -303,26 +287,81 @@ function sinResultados() {
 }
 
 //CART
-class productoAlCarrito {
-	constructor(nombre, precio, unidades) {
-		this.nombre = nombre;
-		this.precio = precio;
-		this.unidades = unidades;
-	}
-}
 
 cartBtn.addEventListener("click", () => {
 	cartModal.style.display === "none"
-		? cartModalSwap()
+		? swapModalC()
 		: (cartModal.style.display = "none");
 });
 
-// const addBtns = document.querySelectorAll(".add-btn");
-// const quantImputs = document.querySelectorAll(".quant-imput")
-// addBtns.forEach((button) => {
-// 	button.addEventListener("click", pushToCart())
-// })
-// function pushToCart(event) {
-// 	const boton = event.target
-// 	const info = 
-// }
+let listaCarrito = document.getElementById("lista-carrito");
+const btnsAnadir = document.querySelectorAll(".add-btn");
+const imputsCantidad = document.querySelectorAll(".quant-imput");
+const totalCarrito = document.getElementById("total");
+let spanTotal = document.getElementById("total");
+let total = 0;
+
+btnsAnadir.forEach(function (boton) {
+	boton.addEventListener("click", function () {
+		let producto = boton.closest(".card");
+		let nombre = producto.querySelector(".card-title").textContent.trim();
+		let precioTexto = producto
+			.querySelector(".card-price")
+			.textContent.trim();
+		let precio = parseFloat(
+			precioTexto.split("|")[1].trim().replace("$", "")
+		);
+		let cantidad = parseInt(producto.querySelector(".quant-imput").value);
+		let stock = parseInt(producto.dataset.stock);
+		let cantidadValida = cantidad <= stock ? true : false;
+		if (!cantidadValida) {
+			sinStock();
+			return;
+		}
+		let totalProducto = precio * cantidad;
+		sumarAlCarrito(nombre, cantidad, totalProducto);
+	});
+});
+
+function sumarAlCarrito(nombre, cantidad, totalProducto) {
+	let nuevoLi = document.createElement("li");
+	nuevoLi.textContent = `${nombre} (${cantidad}) | $${totalProducto.toFixed(
+		2
+	)}`;
+	listaCarrito.appendChild(nuevoLi);
+	total += totalProducto;
+	spanTotal.textContent = total.toFixed(2);
+	let carritoLocal = JSON.parse(localStorage.getItem("localCart")) || [];
+	let datosProducto = {
+		nombre: nombre,
+		cantidad: cantidad,
+		totalProducto: totalProducto,
+	};
+	carritoLocal.push(datosProducto);
+	localStorage.setItem("localCart", JSON.stringify(carritoLocal));
+	Swal.fire({
+		title: "Éxito",
+		text: "Producto/s agregado/s al carrito correctamente.",
+		icon: "success",
+		confirmButtonText: "Aceptar",
+		confirmButtonColor: "#6a0000",
+		iconColor: "#6a0000",
+	});
+}
+
+function sinStock() {
+	Swal.fire({
+		title: "Sin stock",
+		text: "La cantidad indicada supera nuestro stock disponible.",
+		icon: "error",
+		confirmButtonText: "Aceptar",
+		confirmButtonColor: "#6a0000",
+		iconColor: "#6a0000",
+	});
+}
+
+const clearCartBtn = document.querySelector("#clearCartBtn");
+clearCartBtn.addEventListener("click", () => {
+	listaCarrito.innerHTML = "";
+	spanTotal.innerHTML = "0";
+});
