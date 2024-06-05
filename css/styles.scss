@@ -147,6 +147,7 @@ nav {
                         width: 50%;
                     }
                     .card-body {
+                        margin-top: 3em;
                         height: 50%;
                         .card-product-desc {
                             height: 75%;
@@ -167,6 +168,7 @@ nav {
                                 color: utils.$color2;
                             }
                             .card-options-container {
+                                margin-bottom: 3em;
                                 gap: 1em;
                                 .quant-imput {
                                 width: 25%;

@@ -202,6 +202,7 @@ nav .container-fluid .cartNSearch-container .cart-container {
   width: 50%;
 }
 .purchase-section .product-container .row .col .card .card-body {
+  margin-top: 3em;
   height: 50%;
 }
 .purchase-section .product-container .row .col .card .card-body .card-product-desc {
@@ -224,6 +225,7 @@ nav .container-fluid .cartNSearch-container .cart-container {
   color: #6a0000;
 }
 .purchase-section .product-container .row .col .card .card-body .card-product-options .card-options-container {
+  margin-bottom: 3em;
   gap: 1em;
 }
 .purchase-section .product-container .row .col .card .card-body .card-product-options .card-options-container .quant-imput {
