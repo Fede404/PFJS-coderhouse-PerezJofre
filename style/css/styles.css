@@ -11,10 +11,20 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .found-prod-container {
-  padding: 0 1em;
-  width: 100%;
+  margin: 0.5em;
+  width: auto;
+  padding: 0 1.5em;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  border: 1px solid #0d1821;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.prod-p {
+  font-weight: 600;
+  margin: 0.5em 0;
 }
 
 .no-style-anchor {
@@ -23,16 +33,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .redirect-btn {
   outline: none;
-  padding: 0.25em 1em;
-  border-radius: 5px;
-  color: #ffffff;
-  border: 1px solid #70798c;
-  background-color: #0d1821;
+  padding: 0.15em 0.5em;
+  border-radius: 50px;
+  color: #0d1821;
+  border: none;
+  background-color: #ffffff;
   font-size: 1em;
   transition: all 0.2s;
 }
 .redirect-btn:hover {
   background-color: #6a0000;
+  color: #fffaf4;
 }
 .redirect-btn:active {
   transform: scale(98%);
@@ -41,7 +52,7 @@ input[type=number]::-webkit-outer-spin-button {
 .close-btn {
   outline: none;
   padding: 0.25em 0.75em;
-  margin-top: 1em;
+  margin-top: 3em;
   border-radius: 50px;
   color: #ffffff;
   border: 1px solid #70798c;
@@ -58,6 +69,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 #lista-carrito {
   list-style: none;
+  margin: 0 2em 2em 0;
+}
+
+.cart-prod-li {
+  padding: 0.25em 1.5em;
+  margin-bottom: 0.5em;
+  width: 100%;
+  border: 1px solid #0d1821;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
 nav {

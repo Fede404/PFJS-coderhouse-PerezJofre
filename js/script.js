@@ -252,13 +252,14 @@ function crearYAnadir() {
 		const productoEncontrado = document.createElement("div");
 		productoEncontrado.classList.add("found-prod-container");
 		const parrafo = document.createElement("p");
+		parrafo.classList.add("prod-p")
 		parrafo.textContent = e.nombre.toUpperCase();
 		productoEncontrado.appendChild(parrafo);
 		const anchor = document.createElement("a");
 		anchor.href = "#card" + e.id;
 		anchor.classList.add("no-style-anchor");
 		const btnRedirigir = document.createElement("button");
-		btnRedirigir.innerText = "Ver";
+		btnRedirigir.innerText = ">";
 		btnRedirigir.classList.add("redirect-btn");
 		anchor.appendChild(btnRedirigir);
 		productoEncontrado.appendChild(anchor);
@@ -294,12 +295,17 @@ cartBtn.addEventListener("click", () => {
 		: (cartModal.style.display = "none");
 });
 
+const closeCartBtn = document.getElementById("closeCart-btn");
 let listaCarrito = document.getElementById("lista-carrito");
 const btnsAnadir = document.querySelectorAll(".add-btn");
 const imputsCantidad = document.querySelectorAll(".quant-imput");
 const totalCarrito = document.getElementById("total");
 let spanTotal = document.getElementById("total");
 let total = 0;
+
+closeCartBtn.addEventListener("click", () => {
+	cartModal.style.display = "none";
+})
 
 btnsAnadir.forEach(function (boton) {
 	boton.addEventListener("click", function () {
@@ -325,6 +331,7 @@ btnsAnadir.forEach(function (boton) {
 
 function sumarAlCarrito(nombre, cantidad, totalProducto) {
 	let nuevoLi = document.createElement("li");
+	nuevoLi.classList.add("cart-prod-li")
 	nuevoLi.textContent = `${nombre} (${cantidad}) | $${totalProducto.toFixed(
 		2
 	)}`;
@@ -360,8 +367,31 @@ function sinStock() {
 	});
 }
 
-const clearCartBtn = document.querySelector("#clearCartBtn");
+const clearCartBtn = document.getElementById("clearCartBtn");
 clearCartBtn.addEventListener("click", () => {
 	listaCarrito.innerHTML = "";
 	spanTotal.innerHTML = "0";
 });
+
+const confirmBtn = document.getElementById("confirm-btn")
+confirmBtn.addEventListener("click", async () => {
+	const { value: email } = await Swal.fire({
+		icon: "info",
+		title: "Ingrese su e-mail para enviarle los detalles de su pedido.",
+		input: "email",
+		inputPlaceholder: "Ingrese su e-mail",
+		confirmButtonText: "Aceptar",
+		confirmButtonColor: "#6a0000",
+		iconColor: "#6a0000",
+	});
+	if (email) {
+		Swal.fire({
+			title: "Éxito",
+			text: "Pedido procesado correctamente, recibirá por e-mail los detalles",
+			icon: "success",
+			confirmButtonText: "Aceptar",
+			confirmButtonColor: "#6a0000",
+			iconColor: "#6a0000",
+		});
+	}
+})
