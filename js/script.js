@@ -302,6 +302,7 @@ const imputsCantidad = document.querySelectorAll(".quant-imput");
 const totalCarrito = document.getElementById("total");
 let spanTotal = document.getElementById("total");
 let total = 0;
+let contadorItems = 0;
 
 closeCartBtn.addEventListener("click", () => {
 	cartModal.style.display = "none";
@@ -330,6 +331,7 @@ btnsAnadir.forEach(function (boton) {
 });
 
 function sumarAlCarrito(nombre, cantidad, totalProducto) {
+	contadorItems += cantidad;
 	let nuevoLi = document.createElement("li");
 	nuevoLi.classList.add("cart-prod-li")
 	nuevoLi.textContent = `${nombre} (${cantidad}) | $${totalProducto.toFixed(
@@ -371,10 +373,19 @@ const clearCartBtn = document.getElementById("clearCartBtn");
 clearCartBtn.addEventListener("click", () => {
 	listaCarrito.innerHTML = "";
 	spanTotal.innerHTML = "0";
+	contadorItems = 0;
 });
 
 const confirmBtn = document.getElementById("confirm-btn")
-confirmBtn.addEventListener("click", async () => {
+confirmBtn.addEventListener("click", () => {
+	chequearCarrito()
+})
+
+function chequearCarrito() {
+	contadorItems > 0 ? confirmarCompra() : carritoVacio()
+}
+
+async function confirmarCompra() {
 	const { value: email } = await Swal.fire({
 		icon: "info",
 		title: "Ingrese su e-mail para enviarle los detalles de su pedido.",
@@ -383,6 +394,7 @@ confirmBtn.addEventListener("click", async () => {
 		confirmButtonText: "Aceptar",
 		confirmButtonColor: "#6a0000",
 		iconColor: "#6a0000",
+		validationMessage: "E-mail no váido"
 	});
 	if (email) {
 		Swal.fire({
@@ -394,4 +406,15 @@ confirmBtn.addEventListener("click", async () => {
 			iconColor: "#6a0000",
 		});
 	}
-})
+}
+
+function carritoVacio() {
+	Swal.fire({
+		title: "Sin productos",
+		text: "El carrito está vacío, añada al menos 1 producto.",
+		icon: "error",
+		confirmButtonText: "Aceptar",
+		confirmButtonColor: "#6a0000",
+		iconColor: "#6a0000",
+	});
+}
