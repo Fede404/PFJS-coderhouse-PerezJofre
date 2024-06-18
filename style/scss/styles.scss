@@ -151,14 +151,6 @@ nav {
                         height: 50%;
                         .card-product-desc {
                             height: 75%;
-                            .card-title {
-                                font-size: 1.25em;
-                                color: utils.$color4;
-                            }
-                            .card-text {
-                                color: utils.$color4;
-                                font-size: 0.9em;
-                            }
                         }
                         .card-product-options {
                             padding-top: 1em;
@@ -186,7 +178,6 @@ nav {
                                     color: #ffffff;
                                     border: 1px solid utils.$color2;
                                     background-color: utils.$color4;
-                                    font-size: 1.25em;
                                     transition: all 0.2s;
                                     &:hover {
                                         background-color: utils.$color2;

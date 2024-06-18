@@ -81,3 +81,94 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 5px;
     background-color: #ffffff;
 }
+
+@media screen and (min-width: 1367px) {
+    .purchase-section {
+        padding-bottom: 2em;
+        height: auto;
+        background-color: $color1;
+        padding-top: 4em;
+        .purchase-section-title {
+            font-size: 3em;
+            color: $color4;
+        }
+        .product-container {
+            width: 90%;
+            .row {
+                width: 100%;
+                .col {
+                    padding: 1em;
+                    width: 33%;
+                    .card {
+                        padding: 0.5em;
+                        height: 100%;
+                        width: 100%;
+                        border: 2px solid $color2;
+                        .card-body {
+                            margin-top: 3em;
+                            height: 50%;
+                            .card-product-desc {
+                                height: 75%;
+                                .card-title {
+                                    font-size: 1.75em;
+                                    color: $color4;
+                                }
+                                .card-text {
+                                    color: $color4;
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .close-btn {
+        font-size: 0.9em;
+    }
+    .purchase-section {
+        padding-bottom: 2em;
+        height: auto;
+        background-color: $color1;
+        padding-top: 4em;
+        .purchase-section-title {
+            font-size: 3em;
+            color: $color4;
+        }
+        .product-container {
+            width: 90%;
+            .row {
+                width: 100%;
+                .col {
+                    padding: 1em;
+                    width: 33%;
+                    .card {
+                        padding: 0.5em;
+                        height: 100%;
+                        width: 100%;
+                        border: 2px solid $color2;
+                        .card-body {
+                            margin-top: 3em;
+                            height: 50%;
+                            .card-product-desc {
+                                height: 75%;
+                                .card-title {
+                                    font-size: 1.5em;
+                                    color: $color4;
+                                }
+                                .card-text {
+                                    color: $color4;
+                                    font-size: 0.8em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}   
