@@ -202,6 +202,9 @@ input[type=number]::-webkit-outer-spin-button {
     display: block;
     font-size: 0.75em;
   }
+  .us-section {
+    padding-top: 0;
+  }
   .purchase-section {
     padding-bottom: 2em;
     height: auto;
@@ -264,6 +267,9 @@ input[type=number]::-webkit-outer-spin-button {
   }
   .nav-links-container .navbar-nav .nav-item {
     font-size: 1.25em;
+  }
+  .cartNSearch {
+    align-self: flex-end;
   }
   .cart-container {
     width: 30%;
@@ -341,17 +347,11 @@ input[type=number]::-webkit-outer-spin-button {
   .navbar img {
     width: 300px;
   }
-  .navbar {
-    justify-content: space-between;
-  }
   .cart-container {
     width: 25%;
   }
   .search-container {
     width: 25%;
-  }
-  .cartNSearch {
-    align-self: flex-end;
   }
   .home-section .wallpaper .logo {
     width: 500px;
