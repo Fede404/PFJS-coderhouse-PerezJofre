@@ -2,8 +2,8 @@
 nav {
     background-color: utils.$color1;
     border-bottom: 1px solid utils.$color3;
-    .container-fluid {
-        .navbar-collapse {
+    .collapse {
+        .nav-links-container {
             .navbar-nav {
                 .nav-item {
                     .nav-link {
@@ -43,7 +43,6 @@ nav {
                 color: utils.$color4;
                 display: none;
                 background-color: utils.$color1;
-                width: 25%;
                 height: auto;
                 position: absolute;
                 top: 100%;
@@ -56,7 +55,6 @@ nav {
                 color: utils.$color4;
                 display: none;
                 background-color: utils.$color1;
-                width: 25%;
                 height: auto;
                 position: absolute;
                 top: 100%;
@@ -72,11 +70,6 @@ nav {
     .wallpaper {
         .logo {
             position: absolute;
-            top: 15%;
-        }
-        .bg-img {
-            width: 100%;
-            height: 100vh;
         }
         .attribution-desc {
             font-size: 0.75em;
@@ -91,7 +84,6 @@ nav {
     height: auto;
     background-color: utils.$color1;
     margin: auto;
-    padding-top: 1em;
     .us-section-title {
         margin-top: 1em;
         color: utils.$color4;
@@ -128,6 +120,7 @@ nav {
     background-color: utils.$color1;
     padding-top: 4em;
     .purchase-section-title {
+        text-align: center;
         font-size: 3em;
         color: utils.$color4;
     }
@@ -136,8 +129,6 @@ nav {
         .row {
             width: 100%;
             .col {
-                padding: 1em;
-                width: 33%;
                 .card {
                     padding: 0.5em;
                     height: 100%;
@@ -196,13 +187,10 @@ nav {
 }
 
 .footer {
-    height: 7.5vh;
     background-color: utils.$color2;
     padding: 0 2em;
     .page-info {
         color: utils.$color1;
-        font-size: 1.25em;
-        margin: 0;
     }
     .socials-container {
         .anchor {

@@ -11,16 +11,19 @@
     <link rel="shortcut icon" href="resources/images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-color">
-        <div class="container-fluid">
-            <img src="resources/images/logo.webp" alt="logo de la vinoteca" width="250">
-            <div class="col col-xl-6lapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-md fixed-top">
+        <img src="resources/images/logo.webp" alt="logo de la vinoteca" width="250">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="nav-links-container">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link" href="#home-section">Inicio</a>
+                        <a class="nav-link" href="#home-section">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#us-section">Sobre Nosotros</a>
+                        <a class="nav-link" href="#us-section">Nosotros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#purchase-section">Productos</a>
@@ -59,6 +62,7 @@
                 </div>
             </div>
         </div>
+        
     </nav>
     <section class="home-section" id="home-section">
         <div class="wallpaper d-flex flex-column align-items-center">
@@ -91,7 +95,7 @@
         <h2 class="purchase-section-title">Productos Disponibles</h2>
         <div class="product-container container-fluid">
             <div class="row">
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" id="card1" data-stock="20">
                         <img src="resources/images/products/1.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -112,7 +116,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" id="card2" data-stock="20">
                         <img src="resources/images/products/2.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -133,7 +137,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card3">
                         <img src="resources/images/products/3.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -154,14 +158,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card4">
                         <img src="resources/images/products/4.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
                             <div class="card-product-desc d-flex flex-column align-items-center">
                                 <h5 class="card-title">Tinto Negro Uco Valley 2022</h5>
                                 <p class="card-text">"Un malbec especiado con muchas bayas y cerezas que se extiende a un paladar jugoso, de cuerpo medio con taninos elegantes y calcáreos. Final sabroso y afrutado. Vegano. Bebe ahora." James Suckling <br><br>
-
                                     TintoNegro, está destinada a celebrar la esencia del Malbec, conocido por su color oscuro y negruzco, el Malbec es definitivamente un TintoNegro. La bodega nació de la amistad y la colaboración profesional de Alejandro Sejanovich y Jeff Mausbach, colegas en Bodega Catena Zapata durante casi 15 años.
                                 </p>
                             </div>
@@ -175,7 +178,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card5">
                         <img src="resources/images/products/5.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -194,7 +197,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card6">
                         <img src="resources/images/products/6.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -217,7 +220,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card7">
                         <img src="resources/images/products/7.webp"alt="Vino Blanco">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -236,7 +239,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card8">
                         <img src="resources/images/products/8.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -255,7 +258,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card9">
                         <img src="resources/images/products/9.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -276,7 +279,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card10">
                         <img src="resources/images/products/10.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -295,7 +298,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card11">
                         <img src="resources/images/products/11.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -314,7 +317,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card12">
                         <img src="resources/images/products/12.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -335,7 +338,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card13">
                         <img src="resources/images/products/13.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -354,7 +357,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card14">
                         <img src="resources/images/products/14.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -373,7 +376,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card15">
                         <img src="resources/images/products/15.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -394,7 +397,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card16">
                         <img src="resources/images/products/16.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -413,7 +416,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card17">
                         <img src="resources/images/products/17.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -432,7 +435,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="col col-xl-6">
+                <div class="col col-md-8 col-sm-12">
                     <div class="card d-flex flex-column align-items-center" data-stock="20"  id="card18">
                         <img src="resources/images/products/18.webp"alt="Vino Tinto">
                         <div class="card-body d-flex flex-column align-items-center">
@@ -456,7 +459,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer d-flex justify-content-between align-items-center" id="footer">
+    <footer class="footer" id="footer">
         <p class="page-info">© 2024 West - Desarrollado por Federico Perez Jofre</p>
         <div class="socials-container">
             <a href="https://www.instagram.com" target="_blank" class="anchor">
@@ -477,7 +480,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="js/script.js"></script>

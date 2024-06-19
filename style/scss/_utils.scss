@@ -53,12 +53,10 @@ input[type=number]::-webkit-outer-spin-button {
 .close-btn {
     outline: none;
     padding: 0.25em 0.75em;
-    margin-top: 3em;
     border-radius: 50px;
     color: #ffffff;
     border: 1px solid $color3;
     background-color: $color4;
-    font-size: 1em;
     transition: all 0.2s;
     &:hover {
         background-color: $color2;
@@ -82,7 +80,48 @@ input[type=number]::-webkit-outer-spin-button {
     background-color: #ffffff;
 }
 
-@media screen and (min-width: 1367px) {
+// SMARTPHONE
+@media screen and (min-width: 360px) {
+    .navbar img {
+        width: 200px;
+    }
+    .collapse {
+        .nav-links-container {
+            margin-left: 2em;
+            width: 100%;
+            .navbar-nav {
+                .nav-item {
+                    font-size: 1em;
+                }
+            }
+        }
+        .cartNSearch-container {
+            width: 100%;
+        }
+    }
+    .cart-container {
+        width: 100%;
+    }
+    .search-container {
+        width: 100%;
+    }
+    .home-section {
+        .wallpaper {
+            .logo {
+                top: 10%;
+                width: 300px;
+            }
+            .bg-img {
+                display: none;
+            }
+            .attribution-desc {
+                display: none;
+            }
+        }
+    }
+    .us-section {
+        padding-top: 10em;
+    }
     .purchase-section {
         padding-bottom: 2em;
         height: auto;
@@ -95,10 +134,9 @@ input[type=number]::-webkit-outer-spin-button {
         .product-container {
             width: 90%;
             .row {
-                width: 100%;
+                place-content: center;
                 .col {
-                    padding: 1em;
-                    width: 33%;
+                    margin-bottom: 2em;
                     .card {
                         padding: 0.5em;
                         height: 100%;
@@ -110,7 +148,8 @@ input[type=number]::-webkit-outer-spin-button {
                             .card-product-desc {
                                 height: 75%;
                                 .card-title {
-                                    font-size: 1.75em;
+                                    text-align: center;
+                                    font-size: 1.5em;
                                     color: $color4;
                                 }
                                 .card-text {
@@ -124,11 +163,60 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
     }
+    .footer {
+    height: auto;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        .page-info {
+            font-size: 1.25em;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .socials-container {
+            margin-bottom: 1em;
+        }    
+    }    
 }
 
-@media screen and (min-width: 769px) {
-    .close-btn {
-        font-size: 0.9em;
+// TABLET
+@media screen and (min-width: 577px) {
+    .navbar img {
+        display: none;
+    }
+    .collapse {
+        justify-content: space-between;
+        flex-direction: row;
+        .nav-links-container {
+            width: auto;
+            .navbar-nav {
+                .nav-item {
+                    font-size: 1em;
+                }
+            }
+        }    
+    }
+    .cart-container {
+        width: 50%;
+    }
+    .search-container {
+        width: 50%;
+    }
+    .home-section {
+        .wallpaper {
+            .logo {
+                top: 10%;
+                width: 300px;
+            }
+            .bg-img {
+                width: 100%;
+            }
+            .attribution-desc {
+                font-size: 0.75em;
+            }
+        }
     }
     .purchase-section {
         padding-bottom: 2em;
@@ -142,10 +230,9 @@ input[type=number]::-webkit-outer-spin-button {
         .product-container {
             width: 90%;
             .row {
-                width: 100%;
+                place-content: center;
                 .col {
-                    padding: 1em;
-                    width: 33%;
+                    margin-bottom: 2em;
                     .card {
                         padding: 0.5em;
                         height: 100%;
@@ -162,7 +249,7 @@ input[type=number]::-webkit-outer-spin-button {
                                 }
                                 .card-text {
                                     color: $color4;
-                                    font-size: 0.8em;
+                                    font-size: 1em;
                                 }
                             }
                         }
@@ -171,4 +258,198 @@ input[type=number]::-webkit-outer-spin-button {
             }
         }
     }
+    .footer {
+    height: 7.5vh;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+        .page-info {
+            font-size: 1.25em;
+        }
+        .socials-container {
+            margin-bottom: 0;
+        } 
+    }    
+}
+
+// LAPTOP
+@media screen and (min-width: 769px) {
+    .navbar img {
+        display: block;
+        width: 200px;
+    }
+    .nav-links-container {
+        .navbar-nav {
+            .nav-item {
+                font-size: 1.25em;
+            }
+        }
+    }
+    .cart-container {
+        width: 30%;
+    }
+    .search-container {
+        width: 30%;
+    }
+    .home-section {
+        .wallpaper {
+            .logo {
+                width: 400px;
+                top: 15%;
+            }
+            .bg-img {
+                width: 100%;
+            }
+            .attribution-desc {
+                font-size: 0.75em;
+            }
+        }
+    }
+    .purchase-section {
+        padding-bottom: 2em;
+        height: auto;
+        background-color: $color1;
+        padding-top: 4em;
+        .purchase-section-title {
+            font-size: 3em;
+            color: $color4;
+        }
+        .product-container {
+            width: 90%;
+            .row {
+                place-content: center;
+                .col {
+                    width: 33%;
+                    margin-bottom: 2em;
+                    .card {
+                        padding: 0.5em;
+                        height: 100%;
+                        width: 100%;
+                        border: 2px solid $color2;
+                        .card-body {
+                            margin-top: 3em;
+                            height: 50%;
+                            .card-product-desc {
+                                height: 75%;
+                                .card-title {
+                                    font-size: 1.5em;
+                                    color: $color4;
+                                }
+                                .card-text {
+                                    color: $color4;
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+    height: 7.5vh;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+        .page-info {
+            font-size: 1.25em;
+        }
+        .socials-container {
+            margin-bottom: 0;
+        }         
+    }    
 }   
+
+// WIDESCREEN
+@media screen and (min-width: 1367px) {
+    .navbar img {
+        width: 300px;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+    .cart-container {
+        width: 25%;
+    }
+    .search-container {
+        width: 25%;
+    }
+    .cartNSearch {
+        justify-self: flex-end;
+    }
+    .home-section {
+        .wallpaper {
+            .logo {
+                width: 500px;
+                top: 15%;
+            }
+            .bg-img {
+                width: 100%;
+                height: 100vh;
+            }
+            .attribution-desc {
+                font-size: 0.75em;
+            }
+        }
+    }
+    .purchase-section {
+        padding-bottom: 2em;
+        height: auto;
+        background-color: $color1;
+        padding-top: 4em;
+        .purchase-section-title {
+            font-size: 3em;
+            color: $color4;
+        }
+        .product-container {
+            margin-top: 2em;
+            width: 90%;
+            .row {
+                place-content: center;
+                .col {
+                    width: 33%;
+                    margin-bottom: 2em;
+                    .card {
+                        padding: 0.5em;
+                        height: 100%;
+                        width: 100%;
+                        border: 2px solid $color2;
+                        .card-body {
+                            margin-top: 3em;
+                            height: 50%;
+                            .card-product-desc {
+                                height: 75%;
+                                .card-title {
+                                    font-size: 1.75em;
+                                    color: $color4;
+                                }
+                                .card-text {
+                                    color: $color4;
+                                    font-size: 1.25em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+    height: 7.5vh;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+        .page-info {
+            font-size: 1.25em;
+        }
+        .socials-container {
+            margin-bottom: 0;
+        }         
+    }
+}
